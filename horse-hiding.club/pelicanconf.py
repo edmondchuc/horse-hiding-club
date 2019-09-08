@@ -6,6 +6,7 @@ AUTHOR = 'Edmond'
 SITENAME = 'Horse Hiding Club'
 SITE_SUBTITLE = 'Horse Hiding Club is a club about hiding horses (in Dota 2).'
 SITEURL = ''
+HERO_IMAGE = 'images/hero.jpg'
 
 PATH = 'content'
 
