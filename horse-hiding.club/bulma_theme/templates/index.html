@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+{% block content %}
+<section id="content">
+{% block content_title %}
+    <section class="hero is-dark is-bold">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title">{{ SITENAME }}</h1>
+                <h2>{{ SITE_SUBTITLE }}</h2>
+            </div>
+        </div>
+    </section>
+
+    {% if MENUITEMS %}
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Menu Items</h1>
+            <ul>
+            {% for title, link in MENUITEMS %}
+                <li><a class="" href="{{ link }}">
+                        {% if p == page %}<strong>{% endif %}
+                        {{ title }}
+                        {% if p == page %}</strong>{% endif %}
+                </a></li>
+            {% endfor %}
+            </ul>
+        </div>
+    </section>
+    {% endif %}
+
+    {% if pages %}
+    {% if DISPLAY_PAGES_ON_MENU %}
+    <section class="section">
+        <div class="container">
+                <h1 class="title">Pages</h1>
+                <ul>
+                    {% for p in pages %}
+                            <li><a class="" href="{{ SITEURL }}/{{ p.url }}">
+                                    {{ p.title }}
+                            </a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if categories %}
+    {% if DISPLAY_CATEGORIES_ON_MENU %}
+    <section class="section">
+        <div class="container">
+                <h1 class="title">Categories</h1>
+                <ul>
+                    {% for cat, null in categories %}
+                            <li><a class="" href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </div>
+    </section>
+    {% endif %}
+{% endblock %}
+
+    <section class="section">
+        <div class="container">
+            <h1 class="title">Articles</h1>
+            <ol id="post-list">
+                {% if not articles_page.object_list %}
+                    <p>No articles...</p>
+                {% endif %}
+                {% for article in articles_page.object_list %}
+                        <li><article class="hentry">
+                                <header> <h2 class="entry-title title is-2"><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark" title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h2> </header>
+                                <footer class="post-info">
+                                    <time class="published" datetime="{{ article.date.isoformat() }}"> {{ article.locale_date }} </time>
+                                    <address class="vcard author">By
+                                    {% for author in article.authors %}
+                                        <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
+                                    {% endfor %}
+                                    </address>
+                                </footer><!-- /.post-info -->
+                                <div class="entry-content"> {{ article.summary }} </div><!-- /.entry-content -->
+                        </article></li>
+                {% endfor %}
+            </ol><!-- /#posts-list -->
+        </div>
+    </section>
+{% if articles_page.has_other_pages() %}
+    {% include 'pagination.html' %}
+{% endif %}
+</section><!-- /#content -->
+{% endblock content %}
