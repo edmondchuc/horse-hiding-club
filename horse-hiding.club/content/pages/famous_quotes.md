@@ -221,4 +221,64 @@ Title: Famous Quotes
             </footer>
         </div>
     </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "Length is everything!"
+            </p>
+            <p class="subtitle">
+                Edmond
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    Explaining to Justin how insecure his current password is.
+                </p>
+            </footer>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "Never run from a Drow."
+            </p>
+            <p class="subtitle">
+                Justin
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    As Justin was running away from the Drow...
+                </p>
+            </footer>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "Please just buy euls."
+            </p>
+            <p class="subtitle">
+                Justin
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    Leoma not buying euls until Ancient III.
+                </p>
+            </footer>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "Somebody force the Tide Hunter!"
+            </p>
+            <p class="subtitle">
+                Kotaro
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    Random Tide Hunter not doing Tide Hunter things.
+                </p>
+            </footer>
+        </div>
+    </div></li>
 </ul>
