@@ -281,4 +281,69 @@ Title: Famous Quotes
             </footer>
         </div>
     </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "They don't know I'm here. I'm alive!"
+            </p>
+            <p class="subtitle">
+                Jessika
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    Jess blinks onto the ward cliff and teleports out.
+                </p>
+            </footer>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "Word is "Genie". Edmond draws jeans. You can't explain that."
+            </p>
+            <p class="subtitle">
+                Edmond
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    Playing Telestrations.
+                </p>
+            </footer>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "How do I get rid of the hydra? It's following me."
+            </p>
+            <p class="subtitle">
+                Jessika
+            </p>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "How do I get rid of the hydra? It's following me."
+            </p>
+            <p class="subtitle">
+                Jessika
+            </p>
+        </div>
+    </div></li>
+    <li><div class="card">
+        <div class="card-content">
+            <p class="title">
+                "I'm not wearing pants. Do I need pants?"
+            </p>
+            <p class="subtitle">
+                Jessika
+            </p>
+            <footer class="card-footer">
+                <p class="footer-card-item">
+                    Jess saying this whilst sitting directly next to Charlie's dissaproving face.
+                </p>
+            </footer>
+        </div>
+    </div></li>
 </ul>
